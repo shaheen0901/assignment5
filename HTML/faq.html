@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  Styling of google font -->
+    <style>
+      .lexend-regular > {
+        font-family: "Lexend Deca", sans-serif;
+      }
+    </style>
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ebcb454599.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Daisy UI -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customized tailwind color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "button-color": "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <!-- Body Starts Here -->
+  <body>
+    <header>
+      <nav class="bg-slate-200 p-3 fixed w-full h-36 z-10 top-0">
+        <div class="container mx-auto flex justify-between">
+          <div>
+            <a href="../index.html">
+                <button class="btn bg-button-color text-2xl font-bold">Home</button>
+            </a>
+            
+          </div>
+          <div class="flex justify-center gap-2">
+            <img src="../assets/logo.png" alt="" />
+            <h3 class="text-black font-bold text-5xl">Donate Bangladesh</h3>
+          </div>
+          <div class="flex pt-2 content-center justify-between gap-3">
+            <img src="../assets/coin.png" alt="" />
+            <h4 id="your-balance" class="text-3xl font-bold">5500</h4>
+            <h4 class="text-3xl font-bold">BDT</h4>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="mt-40  mx-auto w-full text-4xl font-extrabold lg:text-center max-w-screen-2xl ">
+    <div class="flex gap-2">
+        <h1> Important FAQ</h1>
+        <i class="fa-regular fa-circle-question"></i>
+    </div>
+<section class="mt-5">
+    <div class="collapse collapse-arrow bg-base-200 border-2 my-2">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-2xl font-bold">What is the Document Object Model?</div>
+        <div class="collapse-content">
+          <p class="text-2xl font-medium">The Document Object Model (DOM) is an object based model where we can use javascript to manipulate html document such as add, remote, and modify elements.  In this model each of html element can be considered as object them we can change object property and attributes using various methods in DOM </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 border-2 my-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">How do you select on the element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-2xl font-medium">The easiest way to access a single element in the DOM is by its unique ID. You can get an element by ID with the getElementById() method of the document object. Then can change class, value, and styles of the selected element.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 border-2 my-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p class="text-2xl font-medium">Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. Thus, we can control the behavior of an event using eventListener.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 border-2 my-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">How do you manipulate on element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-2xl font-medium">Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. We can set styles of HTML document or we can directly use html block and append it as a child node.
+        </div>
+      </div>
+</section>
+</main>
+    <!-- Main document -->
+  </body>
+</html>
